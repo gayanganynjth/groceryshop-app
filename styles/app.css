@@ -1,0 +1,218 @@
+.navbar, .footerbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu-left, .menu-right, .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 25%;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3%;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+}
+
+.mobile-menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #ddd;
+}
+
+.mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-left, .menu-right .cta-button {
+        display: none;
+    }
+
+    .menu-right .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+.navbar a:not(.cta-button) {
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:not(.cta-button):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.footerbar a:not(.cta-button) {
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footerbar a:not(.cta-button):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* style.css */
+.carousel-container {
+    /* Sets the visible area (viewport) of the carousel */
+    width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+    /* Optional: Add a border/shadow for visual appeal */
+    border: 5px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide {
+    /* Contains all the images */
+    display: flex;
+    /* Sets up a smooth transition for the slide movement */
+    transition: transform 0.5s ease-in-out;
+    /* Initially sets the slide to the beginning */
+    transform: translateX(0);
+}
+
+.carousel-slide img {
+    /* Makes sure each image takes up the full width of the container */
+    min-width: 100%;
+    height: 300px; /* Fixed height for consistency */
+    display: block;
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.footerbar {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #222; /* Darker background */
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+/* style.css */
+
+table {
+    /* Set the width and use 'border-collapse' for clean borders */
+    width: 80%; 
+    border-collapse: collapse; /* This removes the spacing between cells */
+    margin: 20px auto; /* Centers the table on the page */
+    font-family: Arial, sans-serif;
+}
+
+/* Style for all cells (header and data) */
+th, td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 10px;
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Style the table header row */
+thead th {
+    background-color: #f2f2f2; /* Light background for the header */
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Optional: Add Zebra Striping for better readability */
+/* Targets every odd row in the body */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; 
+}
+
+/* Optional: Hover effect on rows */
+tbody tr:hover {
+    background-color: #e0f7fa; /* Highlight row when mouse hovers over it */
+    cursor: pointer;
+}
+
+.Contact-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    padding-top: 7cm;
+}
+
